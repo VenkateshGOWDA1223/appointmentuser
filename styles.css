@@ -1,0 +1,99 @@
+/* Base settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: solid 1px #ddd;
+}
+
+/* Typography */
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form groups styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0,86,179,0.2);
+    outline: none;
+}
+
+/* Button specific styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Status result specific styling */
+#statusResult {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Styles for different appointment statuses */
+#statusResult.pending {
+    background-color: yellow;
+}
+
+#statusResult.accepted {
+    background-color: green;
+}
+
+#statusResult.cancelled {
+    background-color: red;
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
